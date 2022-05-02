@@ -1,79 +1,121 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-        /* unvisited link */
-        a:link {
-        color: #bbbbbb;
-        text-decoration: none;
-        }
-        
-        /* visited link */
-        a:visited {
-        color: #bbbbbb;
-        text-decoration: none;
-        }
-        
-        /* mouse over link */
-        a:hover {
-        color: #eeeeee;
-        text-decoration: none;
-        }
-        
-        /* selected link */
-        a:active {
-        color: #bbbbbb;
-        text-decoration: none;
-        }
-        .column {
-            float: left;
-            width: 32.5%;
-        }
-        .colleft {
-            float: left;
-            width: 64.0%;
-        }
+    <head>
+        <style>
+            /* unvisited link */
+            a:link {
+            color: #bbbbbb;
+            text-decoration: none;
+            }
+            
+            /* visited link */
+            a:visited {
+            color: #bbbbbb;
+            text-decoration: none;
+            }
+            
+            /* mouse over link */
+            a:hover {
+            color: #eeeeee;
+            text-decoration: none;
+            }
+            
+            /* selected link */
+            a:active {
+            color: #bbbbbb;
+            text-decoration: none;
+            }
+            .column {
+                float: left;
+                width: 32.5%;
+            }
+            .colleft {
+                float: left;
+                width: 64.0%;
+            }
 
-        .colright {
-            float: left;
-            width: 24.0%;
-        }
+            .colright {
+                float: left;
+                width: 24.0%;
+            }
 
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        } 
-        .idi-footer {
-            background-color: black;
-            text-align: center; 
-            color:#bbbbbb; 
-            font-family: "Open Sans", Arial, Helvetica, sans-serif;
-        }
-    </style>
-</head>
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            } 
+            .idi-footer {
+                background-color: black;
+                text-align: center; 
+                color:#bbbbbb; 
+                font-family: "Open Sans", Arial, Helvetica, sans-serif;
+            }
+            
+            /* Media Query for Mobile Devices */
+            @media (max-width: 480px) {
+                .idi-desktop-footer {
+                    visibility: hidden;
+                }
+                .idi-mobile-footer {
+                    visibility: visible;
+                }
+            }
 
-<body class="idi-footer">
-    <div class="row">
-        <div class="column" style="border:1px solid white;"> </div>
-        <div class="column" style="border:1px solid white;">
-            <a href="https://www.identitydevelopmentinstitute.com/contact-us" target="_blank">Contact</a><br>
-            <a href="https://drive.google.com/file/d/1_-dw5cI5MUKABITlBU0muvejVhvOxipr/view?usp=sharing" target="_blank">Privacy Policy</a>
+            @media (min-width: 480px) {
+                .idi-desktop-footer {
+                    visibility: visible;
+                }
+                .idi-mobile-footer {
+                    visibility: hidden;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="idi-footer idi-desktop-footer">
+            <div class="row">
+                <div class="column" style="border:0px solid white;"> </div>
+                <div class="column" style="border:0px solid white;">
+                    <a href="https://www.identitydevelopmentinstitute.com/contact-us" target="_blank">Contact</a><br>
+                    <a href="https://drive.google.com/file/d/1_-dw5cI5MUKABITlBU0muvejVhvOxipr/view?usp=sharing" target="_blank">Privacy Policy</a>
+                </div>
+                <div class="column" style="border:0px solid white;"> </div>
+            </div> 
+            <br><br>
+            <div class="row">
+                <div class="colleft" style="text-align:left; border:0px solid white; padding-left: 5%;">
+                    © 2022 Identity Development Institute
+                </div>
+                <div class="colright" style="text-align: right; border:0px solid white; padding-right: 5%;">
+                    <a href="https://www.youtube.com/c/IdentityDevelopmentInstitute" target="_blank"><img src="https://healthyi.github.io/YT-White-Alpha-200x200.png" width="30" height="30"> </a>
+                    <a href="https://rebrand.ly/facebookidi" target="_blank"><img src="https://healthyi.github.io/F_icon_white_cutout.svg" width="30" height="30"> </a>
+                    <a href="https://www.instagram.com/identitydevelopmentinstitute/" target="_blank"><img src="https://healthyi.github.io/IG-White-Alpha-200x200.png" width="30" height="30"></a>
+                </div>
+            </div>
         </div>
-        <div class="column" style="border:1px solid white;"> </div>
-    </div> 
-    <br><br>
-    <div class="row">
-        <div class="colleft" style="text-align:left; border:0px solid white; padding-left: 5%;">
-            © 2022 Identity Development Institute
+
+        <div class="idi-footer idi-mobile-footer">
+            <div class="row">
+                <div class="column" style="border:0px solid white;"> </div>
+                <div class="column" style="border:0px solid white;">
+                    <a href="https://www.identitydevelopmentinstitute.com/contact-us" target="_blank">Contact</a><br>
+                    <a href="https://drive.google.com/file/d/1_-dw5cI5MUKABITlBU0muvejVhvOxipr/view?usp=sharing" target="_blank">Privacy Policy</a>
+                </div>
+                <div class="column" style="border:0px solid white;"> </div>
+            </div> 
+            <br><br>
+            <div class="row">
+                <div style="text-align:center;">
+                    © 2022 Identity Development Institute<br>
+                    <a href="https://www.youtube.com/c/IdentityDevelopmentInstitute" target="_blank"><img src="https://healthyi.github.io/YT-White-Alpha-200x200.png" width="30" height="30"> </a>
+                    <a href="https://rebrand.ly/facebookidi" target="_blank"><img src="https://healthyi.github.io/F_icon_white_cutout.svg" width="30" height="30"> </a>
+                    <a href="https://www.instagram.com/identitydevelopmentinstitute/" target="_blank"><img src="https://healthyi.github.io/IG-White-Alpha-200x200.png" width="30" height="30"></a>
+                </div>
+            </div>
         </div>
-        <div class="colright" style="text-align: right; border:0px solid white; padding-right: 5%;">
-            <a href="https://www.youtube.com/c/IdentityDevelopmentInstitute" target="_blank"><img src="https://healthyi.github.io/YT-White-Alpha-200x200.png" width="30" height="30"> </a>
-            <a href="https://rebrand.ly/facebookidi" target="_blank"><img src="https://healthyi.github.io/F_icon_white_cutout.svg" width="30" height="30"> </a>
-            <a href="https://www.instagram.com/identitydevelopmentinstitute/" target="_blank"><img src="https://healthyi.github.io/IG-White-Alpha-200x200.png" width="30" height="30"></a>
-        </div>
-    </div>
-</body>
+    </body>
 
 </html>
